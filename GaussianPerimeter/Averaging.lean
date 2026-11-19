@@ -8,7 +8,7 @@ public section
 open MeasureTheory Set Function
 open scoped ENNReal RealInnerProductSpace InnerProductSpace
 
-namespace Grokability
+namespace GaussianPerimeter
 
 local notation "Euc" k => EuclideanSpace ℝ (Fin k)
 local notation "UnitSphere" k => Metric.sphere (0 : Euc (k + 1)) 1
@@ -142,4 +142,4 @@ theorem mul_lintegral_acceptance_le_Γ (k N : ℕ) (ρ : ℝ)
     _ ≤ ∫⁻ _, Γ (k + 1) ∂μprod := lintegral_mono hF_le
     _ = Γ (k + 1) := by simp [μprod]
 
-end Grokability
+end GaussianPerimeter

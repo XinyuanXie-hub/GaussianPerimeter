@@ -23,7 +23,7 @@ local elab "with_challenge_matcher " declaration:command : command => do
   finally
     modifyEnv (·.setMainModule originalModule)
 
-namespace Grokability
+namespace GaussianPerimeter
 
 with_challenge_matcher
 /-- The integral of the standard Gaussian density over the boundary.
@@ -56,4 +56,4 @@ theorem gaussianPerimeter_le_Γ {n : ℕ} {K : Set (EuclideanSpace ℝ (Fin n))}
     (hK : Convex ℝ K) : gaussianPerimeter K ≤ Γ n :=
   le_iSup₂ (f := fun K _ => gaussianPerimeter K) K hK
 
-end Grokability
+end GaussianPerimeter

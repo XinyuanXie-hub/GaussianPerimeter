@@ -16,7 +16,7 @@ import Mathlib.Tactic.Ring
 open Set
 open scoped Interval
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The integrand in the truncated Nazarov lower bound. -/
 noncomputable def lowerBoundIntegrand (a b x : ℝ) : ℝ :=
@@ -155,4 +155,4 @@ theorem lowerBound_integral_of_trapezoidal
       (by norm_num) (Filter.Eventually.of_forall (fun x => (Real.exp_pos _).le))
       ((integrand_contDiff a₀ b₀).continuous.intervalIntegrable _ _)
 
-end Grokability
+end GaussianPerimeter

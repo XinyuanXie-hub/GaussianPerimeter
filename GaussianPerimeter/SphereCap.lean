@@ -8,7 +8,7 @@ public section
 open MeasureTheory Set
 open scoped ENNReal RealInnerProductSpace
 
-namespace Grokability
+namespace GaussianPerimeter
 
 private theorem sqrt_pow_eq_capProfile (n : ℕ) {x : ℝ} (hx : x ∈ Icc (-1 : ℝ) 1) :
     (Real.sqrt (1 - x ^ 2)) ^ n = capProfile (n + 2) x := by
@@ -63,4 +63,4 @@ theorem one_sub_capTail_le_uniformSphere (n : ℕ) (hn : 2 ≤ n)
   exact tsub_le_tsub_left
     (uniformSphere_cap_le_capTail n hn hv (div_pos hρ hR0) ((div_lt_one hR0).2 hR)) _
 
-end Grokability
+end GaussianPerimeter

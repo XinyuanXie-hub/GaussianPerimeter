@@ -8,7 +8,7 @@ public section
 open MeasureTheory Set
 open scoped ENNReal RealInnerProductSpace
 
-namespace Grokability
+namespace GaussianPerimeter
 
 local notation "Euc" n => EuclideanSpace ℝ (Fin n)
 
@@ -198,4 +198,4 @@ theorem uniformSphere_cap_le_sectionRatio (n : ℕ) [NeZero n] {v : Euc (n + 1)}
   refine (ENNReal.div_le_div_right (volume_capCone_prod_le n ht ht₁) _).trans_eq ?_
   exact ENNReal.mul_div_mul_left _ _ hU hUt
 
-end Grokability
+end GaussianPerimeter

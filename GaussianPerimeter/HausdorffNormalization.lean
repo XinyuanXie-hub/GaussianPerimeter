@@ -8,7 +8,7 @@ public section
 open MeasureTheory Set Metric
 open scoped ENNReal Pointwise
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The Euclidean isodiametric bound for compact sets. Apply Brunn–Minkowski
 to a set and its reflection, whose sum fits in the ball of radius its diameter. -/
@@ -83,4 +83,4 @@ theorem volume_le_normalized_hausdorff (n : ℕ) :
       rw [← mul_assoc, ENNReal.mul_inv_cancel hC0 hCtop, one_mul]
     _ ≤ C * μH[((n + 1 : ℕ) : ℝ)] A := mul_le_mul_right (hraw A) C
 
-end Grokability
+end GaussianPerimeter

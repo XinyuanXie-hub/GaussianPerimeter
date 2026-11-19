@@ -10,7 +10,7 @@ import Mathlib.Tactic.Ring
 
 @[expose] public section
 
-namespace Grokability
+namespace GaussianPerimeter
 
 namespace ExpBounds
 
@@ -255,4 +255,4 @@ theorem exp_le_expUpper {x : ℚ} (hx : |x| ≤ 32) :
   rw [add_div]
   linarith only [(abs_le.mp he).2]
 
-end Grokability
+end GaussianPerimeter

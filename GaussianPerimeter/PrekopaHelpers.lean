@@ -8,7 +8,7 @@ public section
    https://github.com/hojonathanho/isoperimetric/tree/29768f8beeaf17295cdf3853d37da35d7e2b0a5f.
    Licensed under Apache-2.0. Changes include a port to Lean 4.35 and the module system. -/
 
-namespace Grokability.VolumeComparison
+namespace GaussianPerimeter.VolumeComparison
 
 lemma biSup_add_biSup
     {ι κ : Sort*}
@@ -59,4 +59,4 @@ lemma iSup_rpow_of_pos {ι : Sort*} {r : ℝ} (hr : r > 0) (f : ι → ENNReal) 
     (⨆ (i : ι), f i) ^ r = ⨆ (i : ι), f i ^ r :=
   (ENNReal.orderIsoRpow r hr).map_iSup f
 
-end Grokability.VolumeComparison
+end GaussianPerimeter.VolumeComparison

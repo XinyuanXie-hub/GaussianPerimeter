@@ -9,7 +9,7 @@ public section
 open Filter MeasureTheory Set
 open scoped ENNReal Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 local notation "Euc" => fun n => EuclideanSpace ℝ (Fin n)
 
@@ -118,4 +118,4 @@ theorem lintegral_gaussian_radial (n : ℕ) {f : ℝ → ℝ} (hf : Measurable f
     ring
   · simp [radialDensity, radialKernel, hr]
 
-end Grokability
+end GaussianPerimeter

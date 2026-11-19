@@ -9,7 +9,7 @@ public section
 open Filter MeasureTheory
 open scoped ENNReal Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The integer part of a growing trial count preserves its product with the vanishing scale. -/
 theorem tendsto_floor_mul_scale {s : ℕ → ℝ} {b : ℝ}
@@ -77,4 +77,4 @@ theorem lintegral_le_liminf_of_eventually_le_tendsto
   rw [← (hg x).liminf_eq]
   exact liminf_le_liminf (hgf x)
 
-end Grokability
+end GaussianPerimeter

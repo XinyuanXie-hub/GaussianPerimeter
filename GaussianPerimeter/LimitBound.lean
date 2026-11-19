@@ -9,7 +9,7 @@ public section
 open Filter MeasureTheory
 open scoped ENNReal Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- Turning the expected perimeter inequality for the random polytope into an
 asymptotic bound, given the pointwise radial and cap estimates. -/
@@ -110,4 +110,4 @@ theorem lowerBound_of_polytope_estimates {a b W : ℝ}
   simpa only [N, μ, div_eq_mul_inv, mul_right_comm] using
     mul_le_mul_left hn (ENNReal.ofReal ((n + 1 : ℝ) ^ (1 / 4 : ℝ)))⁻¹
 
-end Grokability
+end GaussianPerimeter

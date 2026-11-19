@@ -19,7 +19,7 @@ The resulting majorant is the pointwise form of the cap estimate used in Theorem
 open Filter MeasureTheory Set
 open scoped Interval Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The unnormalized density of a coordinate of a uniform point on the sphere
 in Euclidean space of dimension `n + 1`. -/
@@ -555,4 +555,4 @@ theorem tendsto_capMajorant_div_capScale (a w : ℝ) (ha : 0 < a) :
   rw [← hsq]
   field_simp [hrad.ne', hρ', hk.ne', hcn.ne', hr.ne', Real.exp_ne_zero]
 
-end Grokability
+end GaussianPerimeter

@@ -10,7 +10,7 @@ public section
 open Filter MeasureTheory
 open scoped ENNReal Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 theorem tendsto_capScale_zero {a : ℝ} (ha : 0 < a) :
     Tendsto (capScale a) atTop (𝓝 0) := by
@@ -106,4 +106,4 @@ theorem lowerBound_of_nazarov {a b W : ℝ} (ha : 0 < a) (hb : 0 < b) (hW : 0 �
         ((measurable_const.sub (shiftedCapTail_measurable a n)).pow_const _))
   · exact hPolytope
 
-end Grokability
+end GaussianPerimeter

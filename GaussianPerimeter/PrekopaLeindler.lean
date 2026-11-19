@@ -11,7 +11,7 @@ public section
    https://github.com/hojonathanho/isoperimetric/tree/29768f8beeaf17295cdf3853d37da35d7e2b0a5f.
    Licensed under Apache-2.0. Changes include a port to Lean 4.35 and the module system. -/
 
-namespace Grokability.VolumeComparison
+namespace GaussianPerimeter.VolumeComparison
 
 open MeasureTheory Set
 open scoped Pointwise
@@ -791,4 +791,4 @@ theorem prekopa_leindler
   rw [rewrite_const_of_result_d_3] at result_d_3
   exact result_d_3
 
-end Grokability.VolumeComparison
+end GaussianPerimeter.VolumeComparison

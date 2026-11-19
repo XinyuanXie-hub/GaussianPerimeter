@@ -10,7 +10,7 @@ import Mathlib.Tactic.NormNum
 
 public section
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The prefactor in equation (14) for the paper's rational parameters. -/
 theorem gaussianPrefactor_lower :
@@ -39,4 +39,4 @@ theorem gaussianPrefactor_lower :
         (div_le_div_of_nonneg_right (mul_le_mul_of_nonneg_left hexp (by norm_num))
           (Real.sqrt_nonneg _))
 
-end Grokability
+end GaussianPerimeter

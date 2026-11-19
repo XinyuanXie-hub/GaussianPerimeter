@@ -8,7 +8,7 @@ public section
 open Filter MeasureTheory
 open scoped ENNReal
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- Theorem 1 of Ivanisvili and Xie, *Grokability in five inequalities*. -/
 theorem theorem1 :
@@ -19,4 +19,4 @@ theorem theorem1 :
       (a := 6131 / 5000) (b := 2387 / 1000) (W := 6)
       (by norm_num) (by norm_num) (by norm_num))
 
-end Grokability
+end GaussianPerimeter

@@ -8,7 +8,7 @@ public section
 open Filter
 open scoped Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- Replacing the dimension in the fourth root by its predecessor has no
 effect in the limit. -/
@@ -58,4 +58,4 @@ theorem tendsto_normalized_prefactor {s : ℕ → ℝ} {a b : ℝ}
   rw [hn, fourthRoot_eq_rpow _ (Nat.cast_nonneg _)]
   ring
 
-end Grokability
+end GaussianPerimeter

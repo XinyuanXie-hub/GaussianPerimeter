@@ -14,7 +14,7 @@ public section
 
 open Finset
 
-namespace Grokability
+namespace GaussianPerimeter
 
 local notation "A" => (6131 / 5000)
 local notation "B" => (2387 / 1000)
@@ -151,4 +151,4 @@ theorem gaussianLowerBound_numeric :
     _ ≤ _ := mul_le_mul gaussianPrefactor_lower lowerBound_integral (by norm_num)
       ((show (0 : ℝ) ≤ 0.938393 by norm_num).trans gaussianPrefactor_lower)
 
-end Grokability
+end GaussianPerimeter

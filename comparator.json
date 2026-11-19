@@ -1,7 +1,7 @@
 {
   "challenge_module": "Challenge",
   "solution_module": "Solution",
-  "theorem_names": ["Grokability.theorem1"],
+  "theorem_names": ["GaussianPerimeter.theorem1"],
   "permitted_axioms": [
     "propext",
     "Quot.sound",

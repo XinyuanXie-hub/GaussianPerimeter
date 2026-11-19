@@ -9,7 +9,7 @@ public section
 open Function Set MeasureTheory MeasureTheory.Measure
 open scoped ENNReal InnerProductSpace RealInnerProductSpace Function
 
-namespace Grokability
+namespace GaussianPerimeter
 
 local notation "Euc" k => EuclideanSpace ℝ (Fin k)
 
@@ -233,4 +233,4 @@ theorem facet_lintegral_sum_le_gaussianPerimeter [Fintype ι] (u : ι → Euc (k
     _ ≤ ∫⁻ x in s i, f x ∂μ :=
       lintegral_mono' (Measure.restrict_mono Subset.rfl Measure.restrict_le_self) (le_refl _)
 
-end Grokability
+end GaussianPerimeter

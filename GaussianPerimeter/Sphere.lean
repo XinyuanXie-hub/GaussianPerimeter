@@ -10,7 +10,7 @@ public section
 open MeasureTheory Set Function
 open scoped ENNReal Pointwise RealInnerProductSpace
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- Given one distinguished sample, each of the other independent samples
 must belong to the same measurable set. -/
@@ -209,4 +209,4 @@ theorem uniformSphere_inner_eq_of_norm_eq {x y : E} (hxy : ‖x‖ = ‖y‖) (c
 
 end Isometries
 
-end Grokability
+end GaussianPerimeter

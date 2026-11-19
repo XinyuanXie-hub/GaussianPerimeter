@@ -10,7 +10,7 @@ public section
 open Filter MeasureTheory Set
 open scoped Topology
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The unnormalized radial density of a standard Gaussian in dimension `n`. -/
 @[expose]
@@ -237,4 +237,4 @@ theorem tendsto_radialDensity_shift (w : ℝ) :
   filter_upwards [eventually_mode_pos] with n hn
   exact (density_shift_eq n hn w).symm
 
-end Grokability
+end GaussianPerimeter

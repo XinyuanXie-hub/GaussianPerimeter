@@ -11,7 +11,7 @@ public section
 open Filter MeasureTheory Set
 open scoped ENNReal Topology RealInnerProductSpace
 
-namespace Grokability
+namespace GaussianPerimeter
 
 private theorem gaussian_density_split (n : ℕ) (ρ r : ℝ) :
     (2 * Real.pi) ^ (-(n + 1 : ℝ) / 2) * Real.exp (-(ρ ^ 2 + r ^ 2) / 2) =
@@ -142,4 +142,4 @@ theorem lowerBound_gaussianPerimeter {a b W : ℝ} (ha : 0 < a) (hb : 0 < b) (hW
       liminf (fun n : ℕ => Γ n / ENNReal.ofReal ((n : ℝ) ^ (1 / 4 : ℝ))) atTop :=
   lowerBound_of_nazarov ha hb hW (lowerBound_gaussianPolytope ha hb)
 
-end Grokability
+end GaussianPerimeter

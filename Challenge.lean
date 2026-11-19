@@ -8,7 +8,7 @@ public section
 open Filter MeasureTheory
 open scoped ENNReal
 
-namespace Grokability
+namespace GaussianPerimeter
 
 /-- The integral of the standard Gaussian density over the boundary.
 Mathlib's diameter-based Hausdorff measure in dimension (k) is scaled by the
@@ -32,4 +32,4 @@ theorem theorem1 :
       liminf (fun n : ℕ => Γ n / ENNReal.ofReal ((n : ℝ) ^ (1 / 4 : ℝ))) atTop := by
   sorry
 
-end Grokability
+end GaussianPerimeter

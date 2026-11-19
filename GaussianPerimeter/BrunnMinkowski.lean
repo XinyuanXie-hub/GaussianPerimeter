@@ -9,7 +9,7 @@ public section
    https://github.com/hojonathanho/isoperimetric/tree/29768f8beeaf17295cdf3853d37da35d7e2b0a5f.
    Licensed under Apache-2.0. Changes include a port to Lean 4.35 and the module system. -/
 
-namespace Grokability.VolumeComparison
+namespace GaussianPerimeter.VolumeComparison
 
 open MeasureTheory Set
 open scoped Pointwise
@@ -250,4 +250,4 @@ theorem brunn_minkowski_euclideanSpace
   rw [h_vol _ hA_measurable, h_vol _ hB_measurable, h_add, h_vol _ hAB_measurable] at h_bm
   exact h_bm
 
-end Grokability.VolumeComparison
+end GaussianPerimeter.VolumeComparison
