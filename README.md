@@ -9,7 +9,7 @@ This project uses Lean to verify Theorem 1.
 For a convex set $`K \subseteq \mathbb{R}^n`$, its Gaussian perimeter (or Gaussian surface area) is defined as
 
 ```math
-\operatorname{GSA}(K) = \int_{\partial K} \varphi_n(x)\,d\sigma(x).
+\mathrm{GSA}(K) = \int_{\partial K} \varphi_n(x)\,d\sigma(x).
 ```
 
 Here $\sigma$ is surface measure on $\partial K$. The Gaussian density is
@@ -21,7 +21,7 @@ Here $\sigma$ is surface measure on $\partial K$. The Gaussian density is
 The extremal quantity of interest is
 
 ```math
-\Gamma(n) := \sup\{\operatorname{GSA}(K) : K \subseteq \mathbb{R}^n \text{ is convex}\}.
+\Gamma(n) := \sup\{\mathrm{GSA}(K) : K \subseteq \mathbb{R}^n \text{ is convex}\}.
 ```
 
 Write $\Gamma_n = \Gamma(n)$.
