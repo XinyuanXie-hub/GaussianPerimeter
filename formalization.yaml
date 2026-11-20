@@ -1,6 +1,6 @@
 # Fill in the placeholders after Comparator passes.
 project:
-  name: "GaussianPerimeter"
+  name: "Improved lower bound for the maximal Gaussian perimeter of convex sets"
   description: "Verification that the limit inferior of the maximal Gaussian perimeter of convex sets in dimension n, divided by n^(1/4), is at least 0.31258, as shown in the source."
   authors:
     - "Xinyuan Xie"
